@@ -372,25 +372,28 @@ h3{
 }
 .flex_plan--heading{
     text-align: center;
+    margin-bottom: 60px;
+    
 }
 .flex_plan--container{
     
     width: calc(100%/3);
     display: flex;
-    margin-right: 50px;
+    margin: 0 auto;
+    margin-left: 5px;
 
-    
 }
 .flex_plan_one {
     border: solid #a0aec0;
     text-align: center;
     margin-right: 50px;
+    border-radius: 10px;
    
 }
 .flex_plan_two{
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     border:none;
-    border-radius: 2px; 
+    border-radius: 10px; 
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -398,12 +401,39 @@ h3{
 
 }
 .flex_plan_three{
+  
     border: solid #a0aec0;
-    border-radius: 2px; 
+    border-radius: 10px; 
     text-align: center;
     margin-left: 50px;
     
 }
+.plan__top--border-red {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height: 9px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.plan__top--border-blue{
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);    height: 9px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.plan_button--red{
+    
+        background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+        border: none;
+        padding: 18px 60px;
+        border-radius: 50px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 300ms ease;
+        margin: 16px;
+    }
+
+
 .price{
     padding: 0px 120px;
     margin-top: 16px;
@@ -418,29 +448,32 @@ h3{
 }
 .plan_button{
     
-    margin: 16px;
-    width: 200px;
+    
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-   border-radius: 50px;
-   padding: 12px;
-   border: none;
-   color: white;
-   transition: all 300ms ease;
+    border: none;
+    padding: 18px 60px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin: 16px;
 
 }
 .business{
     color: white;
 }
 .business_button{
+    color: #5d3eff;
+    border: none;
+    padding: 18px 60px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
     margin: 16px;
-    width: 200px;
-    background: white;
-   border-radius: 50px;
-   padding: 12px;
-   border: none;
-   color: #5d3eff;
-   font-weight: 500;
-   transition: all 300ms ease;
 }
 
 
@@ -494,6 +527,7 @@ h3{
 .row_foot{
     width: 100%;
     margin: 0 auto;
+    background-color: #3f38b1;
     
 }
 .foot_container{
@@ -501,7 +535,7 @@ h3{
     flex-wrap: wrap;
 }
 .footing{
-    background-color: #3f38b1;
+  
     display: flex;
     flex-direction: column;
     width: calc(100%/5);
@@ -517,11 +551,21 @@ h3{
     margin-bottom: 80px;
 }
 .footer_info{
-    background-color: #3f38b1;
+    
+    
+}
+.footer_container{
+    max-width: 1200px;
     display: flex;
    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 2px solid lightgray;
+    padding-top: 50px;
 }
+
 .BigT_img{
 display: flex;
 }
@@ -547,12 +591,46 @@ display: flex;
 .treact_para{
     margin-top: 40px;
 }
+.social__links {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    max-height: 150px;
+    margin: 20px;
+}
+.facebook__link--wrap {
+    border: 2px solid white;
+    border-radius: 9999px;
+    padding: 15px;
+    background-color: white;
+    transition: all 300ms ease;
+}
+.twitter__link--wrap {
+    border: 2px solid white;
+    border-radius: 9999px;
+    padding: 15px;
+    background-color: white;
+    transition: all 300ms ease;
+}
+.youtube__link--wrap {
+    border: 2px solid white;
+    border-radius: 9999px;
+    padding: 15px;
+    background-color: white;
+    transition: all 300ms ease;
+}
 
-@media(max-width: 1023px){
+@media(max-width: 768px){
+
+    .get_started{
+        position: relative;
+        bottom: 200px;
+    }
     .nav_link-anchor{
         max-width: 600px;
         display:none;
     }
+    
     .container{
         flex-direction: column;
         align-items: center;
@@ -570,7 +648,7 @@ display: flex;
     }
     .fortune_img{
         align-items:center;
-        margin-left: 0px;
+        margin-right: 25px;
         width: 450px;
     }
 }
@@ -613,7 +691,7 @@ display: flex;
         }
         .laptop_img{
             width: 500px;
-           margin-left: 120px;
+           margin-left: 80px;
            margin-bottom: 50px;
         }
         .laptop_sections{
@@ -658,22 +736,31 @@ display: flex;
         .proffesional_container{
             margin-left: 20px;
         }
-
+        .flex_plan--heading{
+           margin: 0 auto;
+           margin-top: 50px;
+           margin-bottom: 50px;
+        }
         .flex_plan--container{
+            width: 100%;
+            max-width: 768px;
+            margin: 0 auto;
             flex-wrap: wrap;
           align-items: center;
+       
+        
           
         }
         .flex_plan_one{
-            margin-left: 180px;
+            margin-left: 150px;
             margin-bottom: 50px;
         }
         .flex_plan_two{
-            margin-left: 180px;
+            margin-left: 150px;
             margin-bottom: 50px;
         }
         .flex_plan_three{
-         margin-left: 180px;
+         margin-left: 150px;
             margin-bottom: 80px;
         }
         .price .business{
@@ -707,6 +794,11 @@ display: flex;
             }
             .row_foot{
                 background-color: #3f38b1;
+            }
+            .footer_container{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
             }
     
     }
